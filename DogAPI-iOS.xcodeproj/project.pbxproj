@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5BEB7325DDAB2D009F532C /* DogsNetworkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB6725DDAB2D009F532C /* DogsNetworkDTO.swift */; };
+		1D5BEB7425DDAB2D009F532C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB6825DDAB2D009F532C /* FavoritesViewController.swift */; };
+		1D5BEB7625DDAB2D009F532C /* BreedsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB6A25DDAB2D009F532C /* BreedsAssembly.swift */; };
+		1D5BEB7825DDAB2D009F532C /* BreedsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB6C25DDAB2D009F532C /* BreedsCoordinator.swift */; };
+		1D5BEB7925DDAB2D009F532C /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB6D25DDAB2D009F532C /* BreedsViewController.swift */; };
+		1D5BEB7B25DDAB2D009F532C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB6F25DDAB2D009F532C /* AppDelegate.swift */; };
+		1D5BEB7C25DDAB2D009F532C /* BreedsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB7025DDAB2D009F532C /* BreedsPresenter.swift */; };
+		1D5BEB7E25DDAB2D009F532C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BEB7225DDAB2D009F532C /* TabBarController.swift */; };
+		1D7E311826038D390089B208 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E311726038D390089B208 /* DogAPI.swift */; };
+		B84A5018A260BC9DC0739DBC /* Pods_DogAPI_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97889840299119C270FCDF3 /* Pods_DogAPI_iOS.framework */; };
+		CE342D1125F1568E00283109 /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE342D1025F1568E00283109 /* NSMutableAttributedString+Extensions.swift */; };
+		CE42DCD825E6C007005C8DC5 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42DCD725E6C007005C8DC5 /* Dog.swift */; };
+		CE4B4C8C261F2887002981F6 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4C8B261F2887002981F6 /* StorageManager.swift */; };
+		CE4B4C8F261F3BFE002981F6 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4C8E261F3BFE002981F6 /* Interactor.swift */; };
+		CE4B4C94261F4C05002981F6 /* DogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4C93261F4C05002981F6 /* DogObject.swift */; };
+		CE4B4C98261F5093002981F6 /* DogImageInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B4C97261F5093002981F6 /* DogImageInfoObject.swift */; };
+		CE78037E25ED1D1700840D1A /* SubbreedsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78037D25ED1D1700840D1A /* SubbreedsPresenter.swift */; };
+		CE78038425ED3F8700840D1A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78038325ED3F8700840D1A /* PhotosViewController.swift */; };
+		CE78038725ED3F9500840D1A /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78038625ED3F9500840D1A /* PhotosPresenter.swift */; };
+		CE96238825E9364900F56D03 /* SubbreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96238725E9364900F56D03 /* SubbreedsViewController.swift */; };
+		CED0EA9D25D058FC00F7234A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED0EA9C25D058FC00F7234A /* Assets.xcassets */; };
+		CED0EAA025D058FC00F7234A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED0EA9E25D058FC00F7234A /* LaunchScreen.storyboard */; };
+		CED1A206262DD214004C8A24 /* FileManagerFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1A205262DD214004C8A24 /* FileManagerFacade.swift */; };
+		CED1A214263C363A004C8A24 /* ImageScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1A213263C363A004C8A24 /* ImageScreenPresenter.swift */; };
+		CED1A217263C4190004C8A24 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1A216263C4190004C8A24 /* FavoritesPresenter.swift */; };
+		CED1A21B263C46FC004C8A24 /* FavoritePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1A21A263C46FC004C8A24 /* FavoritePictureCell.swift */; };
+		CEDE2A92260A3B6A00AAB027 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE2A91260A3B6A00AAB027 /* ImageCell.swift */; };
+		CEDE2A97260E223900AAB027 /* ImageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE2A96260E223900AAB027 /* ImageScreenViewController.swift */; };
+		CEEBEBBC25F913320058B242 /* DogsImageNetworkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBEBBB25F913320058B242 /* DogsImageNetworkDTO.swift */; };
+		CEEBEBC82601300D0058B242 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBEBC72601300D0058B242 /* NetworkManager.swift */; };
+		CEEBEBCD26037FFD0058B242 /* URLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBEBCC26037FFD0058B242 /* URLSessionDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BC4C231E0F3606CF3036842 /* Pods-DogAPI-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogAPI-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DogAPI-iOS/Pods-DogAPI-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1D5BEB6725DDAB2D009F532C /* DogsNetworkDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsNetworkDTO.swift; sourceTree = "<group>"; };
+		1D5BEB6825DDAB2D009F532C /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		1D5BEB6A25DDAB2D009F532C /* BreedsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsAssembly.swift; sourceTree = "<group>"; };
+		1D5BEB6C25DDAB2D009F532C /* BreedsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsCoordinator.swift; sourceTree = "<group>"; };
+		1D5BEB6D25DDAB2D009F532C /* BreedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
+		1D5BEB6F25DDAB2D009F532C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D5BEB7025DDAB2D009F532C /* BreedsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsPresenter.swift; sourceTree = "<group>"; };
+		1D5BEB7225DDAB2D009F532C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1D7E311726038D390089B208 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		CE342D1025F1568E00283109 /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		CE42DCD725E6C007005C8DC5 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		CE4B4C8B261F2887002981F6 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		CE4B4C8E261F3BFE002981F6 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		CE4B4C93261F4C05002981F6 /* DogObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogObject.swift; sourceTree = "<group>"; };
+		CE4B4C97261F5093002981F6 /* DogImageInfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageInfoObject.swift; sourceTree = "<group>"; };
+		CE78037D25ED1D1700840D1A /* SubbreedsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedsPresenter.swift; sourceTree = "<group>"; };
+		CE78038325ED3F8700840D1A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		CE78038625ED3F9500840D1A /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
+		CE96238725E9364900F56D03 /* SubbreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedsViewController.swift; sourceTree = "<group>"; };
+		CED0EA8E25D058F700F7234A /* DogAPI-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DogAPI-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED0EA9C25D058FC00F7234A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED0EA9F25D058FC00F7234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CED0EAA125D058FC00F7234A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED1A205262DD214004C8A24 /* FileManagerFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerFacade.swift; sourceTree = "<group>"; };
+		CED1A213263C363A004C8A24 /* ImageScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScreenPresenter.swift; sourceTree = "<group>"; };
+		CED1A216263C4190004C8A24 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		CED1A21A263C46FC004C8A24 /* FavoritePictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePictureCell.swift; sourceTree = "<group>"; };
+		CEDE2A91260A3B6A00AAB027 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		CEDE2A96260E223900AAB027 /* ImageScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScreenViewController.swift; sourceTree = "<group>"; };
+		CEEBEBBB25F913320058B242 /* DogsImageNetworkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImageNetworkDTO.swift; sourceTree = "<group>"; };
+		CEEBEBC72601300D0058B242 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEEBEBCC26037FFD0058B242 /* URLSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDelegate.swift; sourceTree = "<group>"; };
+		E97889840299119C270FCDF3 /* Pods_DogAPI_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogAPI_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB329E7AF5E1977896568FEC /* Pods-DogAPI-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogAPI-iOS.release.xcconfig"; path = "Target Support Files/Pods-DogAPI-iOS/Pods-DogAPI-iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED0EA8B25D058F700F7234A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B84A5018A260BC9DC0739DBC /* Pods_DogAPI_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D5BEB6525DDAB17009F532C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CED0EA9C25D058FC00F7234A /* Assets.xcassets */,
+				CED0EA9E25D058FC00F7234A /* LaunchScreen.storyboard */,
+				CED0EAA125D058FC00F7234A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1D5BEB6625DDAB2D009F532C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA225725F17C1300E44C22 /* Utils */,
+				CEDE2A95260E221D00AAB027 /* ImageScreen */,
+				CE78038125ED3EA400840D1A /* PhotosScreen */,
+				CE96238625E926D700F56D03 /* Subbreeds */,
+				1D5BEB8325DDABA7009F532C /* App */,
+				1D5BEB8225DDAB7B009F532C /* Breeds */,
+				1D5BEB8125DDAB6F009F532C /* Favorites */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1D5BEB8125DDAB6F009F532C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				CED1A219263C46DA004C8A24 /* Cells */,
+				1D5BEB6825DDAB2D009F532C /* FavoritesViewController.swift */,
+				CED1A216263C4190004C8A24 /* FavoritesPresenter.swift */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		1D5BEB8225DDAB7B009F532C /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				CE42DCD925E6C03F005C8DC5 /* DTO */,
+				1D5BEB6A25DDAB2D009F532C /* BreedsAssembly.swift */,
+				1D5BEB6C25DDAB2D009F532C /* BreedsCoordinator.swift */,
+				1D5BEB7025DDAB2D009F532C /* BreedsPresenter.swift */,
+				1D5BEB6D25DDAB2D009F532C /* BreedsViewController.swift */,
+			);
+			name = Breeds;
+			sourceTree = "<group>";
+		};
+		1D5BEB8325DDABA7009F532C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1D5BEB6F25DDAB2D009F532C /* AppDelegate.swift */,
+				1D5BEB7225DDAB2D009F532C /* TabBarController.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		1DFA225725F17C1300E44C22 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CED1A205262DD214004C8A24 /* FileManagerFacade.swift */,
+				CE342D1025F1568E00283109 /* NSMutableAttributedString+Extensions.swift */,
+				CEEBEBCC26037FFD0058B242 /* URLSessionDelegate.swift */,
+				1D7E311726038D390089B208 /* DogAPI.swift */,
+				CEEBEBC72601300D0058B242 /* NetworkManager.swift */,
+				CE4B4C8A261F286D002981F6 /* Storage */,
+				CE4B4C8E261F3BFE002981F6 /* Interactor.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		30ECFDEBD1572825504C4890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BC4C231E0F3606CF3036842 /* Pods-DogAPI-iOS.debug.xcconfig */,
+				FB329E7AF5E1977896568FEC /* Pods-DogAPI-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50A600B05DBC33DA66E37A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E97889840299119C270FCDF3 /* Pods_DogAPI_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE42DCD925E6C03F005C8DC5 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				1D5BEB6725DDAB2D009F532C /* DogsNetworkDTO.swift */,
+				CE42DCD725E6C007005C8DC5 /* Dog.swift */,
+				CEEBEBBB25F913320058B242 /* DogsImageNetworkDTO.swift */,
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
+		CE4B4C8A261F286D002981F6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B4C92261F4BF5002981F6 /* Objects */,
+				CE4B4C8B261F2887002981F6 /* StorageManager.swift */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		CE4B4C92261F4BF5002981F6 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B4C93261F4C05002981F6 /* DogObject.swift */,
+				CE4B4C97261F5093002981F6 /* DogImageInfoObject.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		CE78038125ED3EA400840D1A /* PhotosScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE2A90260A3B5200AAB027 /* Cells */,
+				CE78038325ED3F8700840D1A /* PhotosViewController.swift */,
+				CE78038625ED3F9500840D1A /* PhotosPresenter.swift */,
+			);
+			name = PhotosScreen;
+			sourceTree = "<group>";
+		};
+		CE96238625E926D700F56D03 /* Subbreeds */ = {
+			isa = PBXGroup;
+			children = (
+				CE96238725E9364900F56D03 /* SubbreedsViewController.swift */,
+				CE78037D25ED1D1700840D1A /* SubbreedsPresenter.swift */,
+			);
+			name = Subbreeds;
+			sourceTree = "<group>";
+		};
+		CED0EA8525D058F700F7234A = {
+			isa = PBXGroup;
+			children = (
+				CED0EA9025D058F700F7234A /* DogAPI-iOS */,
+				CED0EA8F25D058F700F7234A /* Products */,
+				30ECFDEBD1572825504C4890 /* Pods */,
+				50A600B05DBC33DA66E37A6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CED0EA8F25D058F700F7234A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED0EA8E25D058F700F7234A /* DogAPI-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED0EA9025D058F700F7234A /* DogAPI-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1D5BEB6525DDAB17009F532C /* Resources */,
+				1D5BEB6625DDAB2D009F532C /* Sources */,
+			);
+			path = "DogAPI-iOS";
+			sourceTree = "<group>";
+		};
+		CED1A219263C46DA004C8A24 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CED1A21A263C46FC004C8A24 /* FavoritePictureCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CEDE2A90260A3B5200AAB027 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE2A91260A3B6A00AAB027 /* ImageCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CEDE2A95260E221D00AAB027 /* ImageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE2A96260E223900AAB027 /* ImageScreenViewController.swift */,
+				CED1A213263C363A004C8A24 /* ImageScreenPresenter.swift */,
+			);
+			name = ImageScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED0EA8D25D058F700F7234A /* DogAPI-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED0EAA425D058FC00F7234A /* Build configuration list for PBXNativeTarget "DogAPI-iOS" */;
+			buildPhases = (
+				9449DBAA65B30929B1FA44CD /* [CP] Check Pods Manifest.lock */,
+				CED0EA8A25D058F700F7234A /* Sources */,
+				CED0EA8B25D058F700F7234A /* Frameworks */,
+				CED0EA8C25D058F700F7234A /* Resources */,
+				2327A152066EB49A3116612E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DogAPI-iOS";
+			productName = "DogAPI-iOS";
+			productReference = CED0EA8E25D058F700F7234A /* DogAPI-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED0EA8625D058F700F7234A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Igor Kryukov";
+				TargetAttributes = {
+					CED0EA8D25D058F700F7234A = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = CED0EA8925D058F700F7234A /* Build configuration list for PBXProject "DogAPI-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED0EA8525D058F700F7234A;
+			productRefGroup = CED0EA8F25D058F700F7234A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED0EA8D25D058F700F7234A /* DogAPI-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED0EA8C25D058F700F7234A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED0EAA025D058FC00F7234A /* LaunchScreen.storyboard in Resources */,
+				CED0EA9D25D058FC00F7234A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2327A152066EB49A3116612E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogAPI-iOS/Pods-DogAPI-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogAPI-iOS/Pods-DogAPI-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DogAPI-iOS/Pods-DogAPI-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9449DBAA65B30929B1FA44CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogAPI-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED0EA8A25D058F700F7234A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED1A214263C363A004C8A24 /* ImageScreenPresenter.swift in Sources */,
+				CE4B4C8C261F2887002981F6 /* StorageManager.swift in Sources */,
+				CE4B4C98261F5093002981F6 /* DogImageInfoObject.swift in Sources */,
+				1D5BEB7C25DDAB2D009F532C /* BreedsPresenter.swift in Sources */,
+				CEEBEBCD26037FFD0058B242 /* URLSessionDelegate.swift in Sources */,
+				1D5BEB7425DDAB2D009F532C /* FavoritesViewController.swift in Sources */,
+				CE342D1125F1568E00283109 /* NSMutableAttributedString+Extensions.swift in Sources */,
+				1D5BEB7B25DDAB2D009F532C /* AppDelegate.swift in Sources */,
+				1D5BEB7925DDAB2D009F532C /* BreedsViewController.swift in Sources */,
+				1D5BEB7825DDAB2D009F532C /* BreedsCoordinator.swift in Sources */,
+				CE42DCD825E6C007005C8DC5 /* Dog.swift in Sources */,
+				CEDE2A92260A3B6A00AAB027 /* ImageCell.swift in Sources */,
+				CE96238825E9364900F56D03 /* SubbreedsViewController.swift in Sources */,
+				1D5BEB7E25DDAB2D009F532C /* TabBarController.swift in Sources */,
+				CE78037E25ED1D1700840D1A /* SubbreedsPresenter.swift in Sources */,
+				CEEBEBC82601300D0058B242 /* NetworkManager.swift in Sources */,
+				CE78038725ED3F9500840D1A /* PhotosPresenter.swift in Sources */,
+				CE78038425ED3F8700840D1A /* PhotosViewController.swift in Sources */,
+				1D5BEB7625DDAB2D009F532C /* BreedsAssembly.swift in Sources */,
+				CE4B4C8F261F3BFE002981F6 /* Interactor.swift in Sources */,
+				CE4B4C94261F4C05002981F6 /* DogObject.swift in Sources */,
+				1D5BEB7325DDAB2D009F532C /* DogsNetworkDTO.swift in Sources */,
+				1D7E311826038D390089B208 /* DogAPI.swift in Sources */,
+				CED1A217263C4190004C8A24 /* FavoritesPresenter.swift in Sources */,
+				CED1A21B263C46FC004C8A24 /* FavoritePictureCell.swift in Sources */,
+				CED1A206262DD214004C8A24 /* FileManagerFacade.swift in Sources */,
+				CEEBEBBC25F913320058B242 /* DogsImageNetworkDTO.swift in Sources */,
+				CEDE2A97260E223900AAB027 /* ImageScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CED0EA9E25D058FC00F7234A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED0EA9F25D058FC00F7234A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED0EAA225D058FC00F7234A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED0EAA325D058FC00F7234A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED0EAA525D058FC00F7234A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC4C231E0F3606CF3036842 /* Pods-DogAPI-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58264M4D6;
+				INFOPLIST_FILE = "DogAPI-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "IK.DogAPI-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CED0EAA625D058FC00F7234A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB329E7AF5E1977896568FEC /* Pods-DogAPI-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58264M4D6;
+				INFOPLIST_FILE = "DogAPI-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "IK.DogAPI-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED0EA8925D058F700F7234A /* Build configuration list for PBXProject "DogAPI-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED0EAA225D058FC00F7234A /* Debug */,
+				CED0EAA325D058FC00F7234A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED0EAA425D058FC00F7234A /* Build configuration list for PBXNativeTarget "DogAPI-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED0EAA525D058FC00F7234A /* Debug */,
+				CED0EAA625D058FC00F7234A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED0EA8625D058F700F7234A /* Project object */;
+}
